@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,20 +14,66 @@ body {
   line-height: 1.6;
 }
 
+.site-header {
+  border-bottom: 1px solid #222;
+}
+
+.nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
 main {
   max-width: 900px;
   margin: 0 auto;
-  padding: 80px 24px;
+  padding: 70px 24px;
+}
+
+.hero {
+  margin-bottom: 60px;
 }
 
 h1 {
   font-size: 3.5rem;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
 h2 {
   margin-top: 50px;
+  margin-bottom: 20px;
   font-size: 1.8rem;
+}
+
+h3 {
+  margin-top: 0;
 }
 
 p {
@@ -34,9 +88,8 @@ p {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
-  margin-top: 20px;
 }
 
 .project-card {
@@ -46,8 +99,35 @@ p {
   background: #181818;
 }
 
+.about {
+  max-width: 650px;
+}
+
 footer {
-  margin-top: 60px;
+  margin-top: 70px;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+
   color: #888;
   font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  main {
+    padding-top: 50px;
+  }
 }
