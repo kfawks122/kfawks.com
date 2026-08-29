@@ -3,58 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>KFawks</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="/">KF</a>
+
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
   <main>
-    <h1>Kyle Fawks</h1>
 
-    <p class="tagline">
-      Building systems. Learning technology. Automating the boring stuff.
-    </p>
+    <section class="hero">
+      <h1>Kyle Fawks</h1>
 
-    <h2>Projects</h2>
+      <p class="tagline">
+        Building systems. Learning technology. Automating the boring stuff.
+      </p>
+    </section>
 
-    <div class="projects">
-      <div class="project-card">
-        <h3>Automation & AI</h3>
-        <p>Workflows, agents, and automation experiments.</p>
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="projects">
+
+        <div class="project-card">
+          <h3>Automation & AI</h3>
+          <p>
+            Workflows, agents, and automation experiments.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Local AI Lab</h3>
+          <p>
+            Self-hosted AI, Ollama, and local language models.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Data & Analytics</h3>
+          <p>
+            Projects involving data analysis and visualization.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Homelab</h3>
+          <p>
+            Servers, networking, self-hosting, and infrastructure.
+          </p>
+        </div>
+
       </div>
+    </section>
 
-      <div class="project-card">
-        <h3>Local AI Lab</h3>
-        <p>Self-hosted AI, Ollama, and local language models.</p>
-      </div>
+    <section id="about" class="about">
+      <h2>About</h2>
 
-      <div class="project-card">
-        <h3>Data & Analytics</h3>
-        <p>Projects involving data analysis and visualization.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>Homelab</h3>
-        <p>Servers, networking, self-hosting, and infrastructure.</p>
-      </div>
-    </div>
+      <p>
+        I'm building practical projects around automation, local AI,
+        data, and self-hosted technology.
+      </p>
+    </section>
 
     <footer>
       KFawks.com
     </footer>
+
   </main>
 
 </body>
 </html>
-
-<header class="site-header">
-  <nav class="nav">
-    <a class="logo" href="/">KF</a>
-
-    <div class="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#">GitHub</a>
-    </div>
-  </nav>
-</header>
